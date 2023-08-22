@@ -1,0 +1,1320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#mobilenav{
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+#mnav{
+    padding-left: 1vw;
+    padding-right: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 2px solid #000;
+}
+#mobilenav #contant{
+    width: 100%;
+    height: 50%;
+}
+#mobilenav #rows{
+    width: 100%;
+
+}
+#mobilenav #contant #icon{
+    opacity: 0;
+    width: 100%;
+    height: 10vh;
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #000;
+    gap: 10vw;
+}
+#mobilenav #rows .r1{
+    border-top: 2px solid #000;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding-left: 2vw;
+    width: 100%;
+    height: 7vh;
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: roobert;
+
+}
+#mobilenav #contant #plasticbeanm{
+    opacity: 0;
+    display: flex;
+    padding-left: 3vw;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 12vh;
+}
+#mobilenav #plasticbean>h1{
+    font-size: 8vw;
+}
+#mobilenav #rows #git{
+    background-color: #000;
+    color: #fff;
+}
+#mnav i{
+    font-size: 9vw;
+}
+#mnav #right{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-left: 2px solid #000;
+}
+#mnav #left{
+    height: 100%;
+}
+#mnav #left svg{
+    height: 100%;
+}
+#fs{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999999999;
+    width:100%;
+    height:100%;
+    background-color: #fff;
+    display: none;
+}
+#fs>svg{
+    height: 20%;
+    width: 10%;
+}
+#fs .svg{
+    overflow: hidden;
+    width: 30vw;
+    height: 25vh;
+}
+#main{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+ 
+#home{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+canvas{
+
+    max-width: 100vw;
+    max-height: 100vh;
+    
+}
+#text{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    color:#000;
+}
+#text #nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    border-bottom:1px solid #000;
+}
+#nav i{
+    display: none;
+}
+#nav #left{
+    padding-left:2vw;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+#nav #left a>svg{
+    margin-top: .7vw;
+    height: 80%;
+}
+#nav #right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+#nav #right .r{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/4);
+    height: 100%;
+}
+#nav #right .r:hover{
+    background-color: #59c9d1;
+}
+#right .r>h5{
+    font-family:"Suisse LntL";
+    font-size: 1.1vw;
+    font-weight: 500;
+    font-family: roobert;
+}
+#nav #right .r:nth-child(1){
+    border-right: 1px solid #000;
+}
+#nav #right .r:nth-child(2){
+    border-right: 1px solid #000;
+}
+#nav #right .r:nth-child(4){
+    border-right: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+}
+#text h1{
+    line-height: 1;
+    font-size: 6vw;
+    font-family: "FH Giselle";
+    font-weight:550;
+    width: 100%;
+    font-family:"GT Zirkon";
+}
+#text #h1{
+    position: absolute;
+    left:3%;
+    bottom: 10%;
+    width: 55%;
+    color: #000;
+}
+#text #h1 span{
+    display: inline-block;
+}
+#part2{
+    width: 100%;
+}
+#part2 .top{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 3vw;
+    padding-bottom: 1.5vw;
+    width: 100%;
+    height: 25vh;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.top>h1{
+    font-size: 1.7vw;
+    font-family:"GT Zirkon";
+    color: #000;  
+    font-weight: 500;  
+}
+#part2 #cards{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#cards .card{
+    width:calc(100%/3);
+    height: 100%;
+    border-right: 1px solid #000;
+}
+#cards .card:nth-child(3){
+    border: none;
+}
+.card .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+.card .img1{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    transform: rotate(-20deg);
+}
+.card .img img{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+.card .text{
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:15px;
+    width: 100%;
+    height: 50%;
+    color: #000;
+}
+.card .text>h3{
+    font-size: 2vw;
+    font-family:"GT Zirkon";
+    font-weight: 500;
+}
+.card .text>p{
+    font-size: 1.2vw;
+    color: #838383;
+    line-height: 1.3;
+    margin-top: .5vw;
+    margin-bottom: 1vw;
+    font-family:"GT Zirkon";
+    font-weight: 500;
+}
+.card .text .btn{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width: 180px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: roobert;
+    height: 40px;
+    background-color: rgb(17, 16, 16);
+}
+.card:hover img{
+    border-radius: 0%;
+    transform: rotate(20deg);
+}
+.card:hover .img1{
+    width: 100%;
+    height: 100%;
+}
+.card:hover .btn{
+    background-color:#59c9d1;
+    color: #000;
+}
+.card:hover h3{
+    color: #838383;
+}
+.card:hover p{
+    color: #000;
+}
+.cards2{
+    margin-top:5vh;
+    width: 100%;
+    height: 55vh;
+}
+.card2-top{
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    padding-left: 2vw;
+    width: 100%;
+    align-items: center;
+    height: 15vh;
+}
+.card2-top>h1{
+    font-size: 1.5vw;
+    font-family:"GT Zirkon";
+    color: #000;  
+    font-weight: 300;  
+}
+.card2-top>h1 span{
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+.cards2 .cards{
+    display: flex;
+    width:100%;
+    height: 40vh;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.cards2 .card2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #000;
+    width: calc(100%/6);
+    height: 40vh;
+}
+.cards2 .card2 img{
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+.cards2 .card2:nth-child(6){
+    border: none;
+}
+.cards2 .card2:hover img{
+    width: 100%;
+    height: 100%;
+}
+#hoverdivs{
+    width: 100%;
+    height: 110vh;
+}
+
+.hoverdiv{
+    width: 100%;
+}
+#blue-wave{
+
+    width: 100%;
+    height: 85%;
+}
+.hoverdiv #hnav{
+    padding: 0 2vw;
+    display: flex;
+    padding-top: 2vw;
+    align-items: center;
+    font-family:"GT Zirkon";
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+}
+#hnav>h1{
+    font-weight: 500;
+    font-size: 3vw;
+}
+#hnav>h3{
+    font-weight:400;
+    font-size: 2vw;
+}
+#hnav>i{
+    font-weight:100;
+    font-size: 3vw;
+}
+.hoverdiv .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 50%;
+    text-align: right;
+    margin-left: 45vw;
+    height: 20vh;
+    margin-top:2vw;
+}
+.content>h3{
+    font-family: roobert;
+    margin-bottom:.5vw;
+    font-weight:600;
+    font-size: 1.5vw
+}
+.content>h5{
+    font-family: roobert;
+    font-size: 1.2vw;
+    font-weight: 300;
+    line-height: 1.3;
+}
+.content>h5 span{
+    font-weight: 900;
+    font-size: 1.4vw;
+}
+.hoverdiv .img{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 60vh;
+}
+.hoverdiv .img img{
+    width: 22%;
+    margin-left:10vw;
+}
+#grsimg img{
+    width: 40%;
+    margin-left: 20vw;
+}
+
+#GRS{
+    height: 15%;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10vh;
+}
+#GRS .content{
+    opacity: 0;
+}
+#GRS .img{
+    opacity: 0;
+}
+
+#part3{
+    transform: translateX(100%);
+    width: 100%;
+    background-color: #000101;
+}
+#part3 .rows{
+    width: 100%;
+    height: 120vh;
+}
+#part3 #text3{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 90vh;
+    background-color:transparent;
+    background-color: #000;
+}
+#part3 #text3>h1{
+    transform: translateX(-50%);
+    font-size: 15vw;
+    white-space: nowrap;
+    /* color: #fff; */
+    position: relative;
+    z-index: 9999;
+    font-family:gilroy;
+    /* mix-blend-mode: difference !important; */
+    -webkit-text-stroke: 1px #ffffff;
+}
+#part3 .rows .r1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 2vw;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding-right: 12vw;
+    height: calc(100%/3);
+}
+#part3 .rows .r1 .hr1{
+    
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    width:0%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: 9;
+    transform: translate(0,-50%);
+    background-color: #fff;
+}
+
+#part3 .rows .r1:hover .hr1{
+    width: 100%;
+}
+
+#part3 .rows .r1:hover h1{
+   color: #000;
+}
+
+
+#part3 .rows .r1:hover h5{
+   color: #000;
+}
+
+ 
+ 
+#part3 .r1>h1{
+    font-size:10vw;
+    font-weight: 500;
+    position: relative;
+    z-index: 99999;
+    color: #fff;
+    font-family:"GT Zirkon";
+}
+#part3 .r1>h5{
+    font-size:2vw;
+    width: 40%;
+    z-index: 999;
+    color: #fff;
+    font-weight: 300;
+    font-family:"GT Zirkon";
+
+}
+ 
+#part3 #bottom{
+    width: 100%;
+    background-color: #fff;
+}
+#part3 #bottom #h1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    width: 100%;
+    height: 40vh;
+    border-bottom: 1px solid #000;
+}
+#bottom #h1 #button{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    font-family: roobert;
+    color: #fff;
+    height: 50px;
+    background-color: #000;
+}
+#bottom #h1 #button:hover{
+    background-color:#59c9d1;
+}
+#bottom #h1>h1{
+    width: 50%;
+    font-family:"GT Zirkon";
+    font-weight: 500;
+    font-size: 2.5vw;
+}
+#bottom .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    font-size: 5vw;
+    gap: 20vw;
+
+}
+#bottom .icon>i:hover{
+    color: #59c9d1;
+}
+#bottom #mac{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#bottom #mac .a1{
+    transition:all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:calc(100%/3);
+    height: 100%;
+    font-family:"GT Zirkon";
+    font-size:1.5vw;
+    border-right: 1px solid #000;
+}
+#bottom #mac .a1:nth-child(3){
+    border: none;
+}
+#bottom #plasticbean{
+    padding-left: 3vw;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+#bottom #mac .a1:hover{
+    background-color: #59c9d1;
+}
+#bottom #plasticbean>h1{
+    font-family:"GT Zirkon";
+    font-size:6vw;
+    font-weight: 550;
+
+}
+#bottom #mac1{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+#bottom #mac1 .a1{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:calc(100%/3);
+    height: 100%;
+    font-family:"GT Zirkon";
+    font-size:1.5vw;
+    border-right: 1px solid #000;
+}
+#bottom #mac1 .a1:hover{
+    background-color: #59c9d1;
+}
+#bottom #mac1 .a1:nth-child(3){
+    border: none;
+}
+
+/* #responsive mobile */
+
+@media (max-width:500px) {
+    #nav i{
+        display: initial;
+     }
+     #nav #menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     #nav #right{
+        display: none;
+     }
+     #nav{
+        align-items: center;
+        border-bottom: 2px solid #000;
+     }
+     #nav #left{
+        width: 85%;
+        border-right: 2px solid #000;
+     }
+     #nav i{
+        margin-left:3vw;
+        font-size:10vw;
+     }
+     #text h1{
+        font-size: 10vw;
+     }
+     #text #h1{
+        width: 100%;
+     }
+     #part2 .top{
+        height: 15vh;
+     }
+     .top>h1{
+        font-size: 7vw;
+     }
+     #part2 #cards{
+        flex-direction: column;
+     }
+     #cards .card{
+        width:calc(100%/1);
+        margin-bottom: 5vw;
+        border: none;
+        border-right: none;
+        
+        
+     }
+     .card .text>h3{
+        font-size:8vw;
+     }
+     .card .text>p{
+        font-size:4vw;
+     }
+     .card .text .btn{
+        width: 150px;
+        height: 50px;
+        font-size: 5vw;
+     }
+     #part2 #cards{
+        height: 300vh;
+     }
+     .card2-top>h1{
+        font-size: 5vw;
+     }
+     .card2-top>h1 span{
+        font-size: 6vw;
+     }
+     .cards2{
+        height: 255vh;
+     }
+     .cards2 .cards{
+        flex-direction: column;
+        height: 255vh;
+     }
+     .cards2 .card2{
+        width: calc(100%/1);
+        border-bottom: 2px solid #000;
+     }
+     .hoverdiv #hnav{
+        margin-top: 5vw;
+     }
+     #hnav>h3{
+        font-size: 7vw;
+     }
+     #hnav>h1{
+        font-size: 7vw;
+     }
+     #hnav>i{
+        font-size:8vw;
+     }
+     .content>h3{
+        font-size:4vw;
+     }
+     .content>h5{
+        font-size: 4vw;
+     }
+     #hoverdivs{
+        height: 120vh;
+     }
+     .hoverdiv .content{
+        padding-left: 2vw;
+        width: 100%;
+        margin: initial;
+        margin-top:30vw;
+        text-align: left;
+     }
+     .card .text{
+        padding-left: 4vw;
+     }
+     .content>h5 span{
+        font-size: 5vw;
+     }
+     .hoverdiv .img img{
+        width: 70%;
+     }
+     #grsimg img{
+        width: 70%;
+     }
+     #part3 .rows .r1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10vw;
+     }
+     #part3 .r1>h1{
+        font-size: 20vw;
+        font-weight: 700;
+     }
+     #part3 .r1>h5{
+        font-size: 5vw;
+        width: 90%;
+     }
+     #part3 #bottom #h1{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10vw;
+     }
+     #bottom #h1>h1{
+        width: 100%;
+        font-size: 5vw;
+     }
+     #bottom .icon{
+        height: 20vh;
+     }
+     #bottom .icon i{
+        font-size: 10vw;
+     }
+     #part3 .rows{
+        height: 140vh;
+     }
+     #bottom #mac{
+        flex-direction: column;
+        height: 30vh;
+     }
+     #bottom #mac .a1{
+        width: 100%;
+        font-size: 5vw;
+        border: none;
+        border-bottom: 2px solid #000;
+     }
+     #bottom #plasticbean{
+        height: 30vh;
+     }
+     #bottom #plasticbean>h1{
+        font-size: 10vw;
+     }
+     #bottom #mac1{
+        flex-direction: column;
+        height: 30vh;
+     }
+     #bottom #mac1 .a1{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #000;
+        font-size: 5vw;
+     }
+     #GRS{
+        border-bottom: 2px solid #000;
+     }
+     #nav #right{
+      display: none;
+     }
+    
+}
+
+/* #responsive tab  */
+
+@media only screen and (min-width:540px) and (max-width:1000px) {
+    #nav i{
+        display: initial;
+     }
+     #nav #menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     #nav #right{
+        display: none;
+     }
+     #nav{
+        align-items: center;
+        border-bottom: 2px solid #000;
+     }
+     #nav #left{
+        width: 85%;
+        border-right: 2px solid #000;
+     }
+     #nav i{
+        margin-left:3vw;
+        font-size:8vw;
+     }
+
+     #text h1{
+        font-size: 10vw;
+     }
+     #text #h1{
+        width: 100%;
+     }
+     #part2 .top{
+        height: 15vh;
+     }
+     .top>h1{
+        font-size: 7vw;
+     }
+     #part2 #cards{
+        flex-direction: column;
+     }
+     #cards .card{
+        width:calc(100%/1);
+        margin-bottom: 5vw;
+        border: none;
+        border-right: none;
+        
+        
+     }
+     .card .img1{
+        width: 100%;
+        height: 100%;
+        border-radius: 0%;
+        transform: rotate(0deg);
+     }
+     .card .img img{
+        border-radius: 0%;
+     }
+     .card:hover img{
+        transform: rotate(0deg);
+     }
+     .card .text>h3{
+        font-size:8vw;
+     }
+     .card .text>p{
+        font-size:4vw;
+     }
+     .card .text .btn{
+        width: 300px;
+        height: 80px;
+        font-size: 4vw;
+     }
+     #part2 #cards{
+        height: 330vh;
+     }
+     .card2-top>h1{
+        font-size: 5vw;
+     }
+     .card2-top>h1 span{
+        font-size: 6vw;
+     }
+     .cards2{
+        height: 255vh;
+     }
+     .cards2 .cards{
+        flex-direction: column;
+        height: 255vh;
+        border-bottom: none;
+     }
+     .cards2 .card2{
+        width: calc(100%/1);
+        border-bottom: 2px solid #000;
+        border-right: none;
+     }
+     .cards2 .card2 img{
+        height: 80%;
+     }
+     .hoverdiv #hnav{
+        margin-top: 5vw;
+     }
+     #hnav>h3{
+        font-size: 7vw;
+     }
+     #hnav>h1{
+        font-size: 7vw;
+     }
+     #hnav>i{
+        font-size:8vw;
+     }
+     .content>h3{
+        font-size:4vw;
+     }
+     .content>h5{
+        font-size: 4vw;
+     }
+     #hoverdivs{
+        height: 140vh;
+     }
+     .hoverdiv .content{
+        padding-left: 2vw;
+        width: 100%;
+        margin: initial;
+        margin-top:30vw;
+        text-align: left;
+     }
+     #bottom #h1 #button{
+        width: 330px;
+        height: 80px;
+        font-size: 3.5vw;
+     }
+     .card .text{
+        padding-left: 4vw;
+        gap: 35px;
+     }
+     .content>h5 span{
+        font-size: 5vw;
+     }
+     .hoverdiv .img img{
+        width: 70%;
+     }
+     #grsimg img{
+        width: 70%;
+     }
+     #part3 .rows .r1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10vw;
+     }
+     #part3 .r1>h1{
+        font-size: 20vw;
+        font-weight: 700;
+     }
+     #part3 .r1>h5{
+        font-size: 4vw;
+        width: 100%;
+     }
+     #part3 #bottom #h1{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10vw;
+     }
+     #bottom #h1>h1{
+        width: 100%;
+        font-size: 5vw;
+     }
+     #bottom .icon{
+        height: 20vh;
+     }
+     #bottom .icon i{
+        font-size: 10vw;
+     }
+     #part3 .rows{
+        height: 140vh;
+     }
+     #bottom #mac{
+        flex-direction: column;
+        height: 30vh;
+     }
+     #bottom #mac .a1{
+        width: 100%;
+        font-size: 5vw;
+        border: none;
+        border-bottom: 2px solid #000;
+     }
+     #bottom #plasticbean{
+        height: 30vh;
+     }
+     #bottom #plasticbean>h1{
+        font-size: 10vw;
+     }
+     #bottom #mac1{
+        flex-direction: column;
+        height: 30vh;
+     }
+     #bottom #mac1 .a1{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #000;
+        font-size: 5vw;
+     }
+     #GRS{
+        border-bottom: 2px solid #000;
+     }
+    
+}
+
+@media only screen and (min-width:1001px) and (max-width:1024px) {
+     #nav #right{ 
+        width: 25%;
+     }
+     #menu{
+      display: none;
+     }
+     #nav{
+      padding: initial;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #000;
+     }
+     #right .r>h5{
+        font-size: 2vw;
+     }
+     #nav #left{
+        width: 30%;
+        border-right: 2px solid #000;
+     }
+     #nav i{
+        margin-left:3vw;
+        font-size:8vw;
+     }
+
+     #text h1{
+        font-size: 9vw;
+     }
+     #nav #left a>svg{
+        height: 90%;
+     }
+     #text #h1{
+        width: 100%;
+     }
+     #part2 .top{
+        height: 20vh;
+        margin-top: 30vw;
+     }
+     .top>h1{
+        font-size: 4vw;
+     }
+     #part2 #cards{
+        flex-direction: column;
+        
+     }
+     #cards .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:calc(100%/1);
+        margin-bottom: 5vw;
+        border: none;
+        border-right: none;
+        border-bottom: 2px solid #000;
+        
+     }
+     .card .img1{
+        width: 100%;
+        height: 100%;
+        border-radius: 0%;
+        transform: rotate(0deg);
+     }
+     .card .img img{
+        border-radius: 0%;
+     }
+     .card:hover img{
+        transform: rotate(0deg);
+     }
+     .card .text>h3{
+        font-size:8vw;
+     }
+     .card .text>p{
+        font-size:2vw;
+     }
+    
+     #part2 #cards{
+        height:150vh;
+     }
+     #part2 .card .img{
+      padding-left: 20px;;
+      
+      height: 90%;
+     }
+     .card2-top{
+        height: 25vh;
+     }
+     .card2-top>h1{
+        font-size: 3vw;
+     }
+     .card2-top>h1 span{
+        font-size: 4vw;
+     }
+     .cards2{
+        height:300vh;
+     }
+     .cards2 .cards{
+        flex-direction: column;
+        height: 300vh;
+        border-bottom: none;
+     }
+     .cards2 .card2{
+        width: calc(100%/1);
+        height: 80vh;
+        border-bottom: 2px solid #000;
+        border-right: none;
+     }
+     .cards2 .card2 img{
+        height: 80%;
+     }
+     .hoverdiv #hnav{
+        margin-top: 5vw;
+     }
+     #hnav>h3{
+        font-size: 7vw;
+     }
+     #hnav>h1{
+        font-size: 7vw;
+     }
+     #hnav>i{
+        font-size:8vw;
+     }
+     .content>h3{
+        font-size:4vw;
+        margin-bottom: 3vw;
+     }
+     .content>h5{
+        font-size: 3vw;
+     }
+     
+     .hoverdiv .content{
+        padding-left: 2vw;
+        width: 100%;
+        margin: initial;
+        margin-top:15vw;
+        margin-bottom: 15vw;
+        text-align: left;
+     }
+     #bottom #h1 #button{
+        width: 330px;
+        height: 80px;
+        font-size: 3.5vw;
+     }
+     .card .text{
+        padding-left: 4vw;
+        gap: 35px;
+        height: 100%;
+     }
+     .card .text .btn{
+      width: 240px;
+      font-size: 2.5vw;
+      height: 80px;
+     }
+     .content>h5 span{
+        font-size: 3vw;
+     }
+     .hoverdiv .img{
+        padding-right: 5vw;
+        justify-content: flex-end;
+     }
+     .hoverdiv .img img{
+        width: 50%;
+        margin-bottom: 35vw;
+     }
+     #grsimg img{
+        width: 70%;
+     }
+     #part3 .rows .r1{
+        padding: 0 2vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10vw;
+     }
+     #part3 .r1>h1{
+        font-size: 13vw;
+        font-weight: 700;
+     }
+     #part3 .r1>h5{
+        font-size: 4vw;
+        width: 70%;
+     }
+     #part3 #bottom #h1{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4vw;
+     }
+     #bottom #h1>h1{
+        width: 80%;
+        font-size: 3vw;
+     }
+     #bottom .icon{
+        height: 15vh;
+     }
+     #bottom .icon i{
+        font-size: 10vw;
+     }
+     #part3 .rows{
+        height: 140vh;
+     }
+     #bottom #mac{
+        flex-direction: column;
+        height: 30vh;
+     }
+     #bottom #mac .a1{
+        width: 100%;
+        font-size: 5vw;
+        border: none;
+        border-bottom: 2px solid #000;
+     }
+     #bottom #plasticbean{
+        height: 20vh;
+     }
+     #bottom #plasticbean>h1{
+        font-size: 8vw;
+     }
+     #bottom #mac1{
+        flex-direction: column;
+        height: 30vh;
+     }
+     #bottom #h1 #button{
+        width: 330px;
+        height: 100px;
+        font-size:3vw;
+     }
+     #bottom #mac1 .a1{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #000;
+        font-size: 5vw;
+     }
+     #GRS{
+        border-bottom: 2px solid #000;
+     }
+
+     #nav #right .r:nth-child(4){
+      display: initial;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     
+     #nav #right .r:nth-child(4)>h5{
+      font-size: 3vw;
+     }
+     #nav #right .r{
+      display: none;
+     }
+     #nav #right{
+      width: 30%;
+     }
+}
+
+
+
+
+
